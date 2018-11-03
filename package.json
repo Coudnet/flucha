@@ -1,0 +1,27 @@
+{
+  "name": "flucha",
+  "version": "1.0.0",
+  "description": "Flux framework",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "node node_modules/typescript/bin/tsc",
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Coudnet/flucha.git"
+  },
+  "author": "Grisha Fokin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Coudnet/flucha/issues"
+  },
+  "homepage": "https://github.com/Coudnet/flucha#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
+  }
+}
