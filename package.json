@@ -1,6 +1,6 @@
 {
   "name": "flucha",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Flux framework",
   "main": "dist/index.js",
   "scripts": {
