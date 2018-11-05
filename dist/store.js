@@ -1,5 +1,5 @@
 class Store {
-    constructor(data, actionTypes) {
+    constructor(data, update, actionTypes) {
         this.data = data;
         this.actions = actionTypes;
         this.subscribers = [];
@@ -12,9 +12,7 @@ class Store {
     }
     update(action) {
         this.actions.forEach((currentActions) => {
-            if(currentActions.name === action.name) {
-                currentActions.update.call(this, action.data)
-            }
+            if(currentActions.name === action.name) currentActions.update(action.data)
         });
         this.notifyAll();
     }
